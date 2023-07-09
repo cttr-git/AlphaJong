@@ -52,13 +52,13 @@ function printTilePriority(tiles) {
 		"> Shanten: <" + Number(tiles[0].shanten).toFixed(0) + ">");
 	for (var i = 0; i < tiles.length && i < LOG_AMOUNT; i++) {
 		log(getTileName(tiles[i].tile, false) +
-			": Priority: <" + Number(tiles[i].priority).toFixed(3) +
-			"> Efficiency: <" + Number(tiles[i].efficiency).toFixed(3) +
+			": 優先順位: <" + Number(tiles[i].priority).toFixed(3) +
+			"> 効率: <" + Number(tiles[i].efficiency).toFixed(3) +
 			"> Yaku Open: <" + Number(tiles[i].yaku.open).toFixed(3) +
 			"> Yaku Closed: <" + Number(tiles[i].yaku.closed).toFixed(3) +
 			"> Dora: <" + Number(tiles[i].dora).toFixed(3) +
 			"> Waits: <" + Number(tiles[i].waits).toFixed(3) +
-			"> Danger: <" + Number(tiles[i].danger).toFixed(2) + ">");
+			"> 危険度: <" + Number(tiles[i].danger).toFixed(2) + ">");
 	}
 }
 
